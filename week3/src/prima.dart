@@ -9,6 +9,9 @@ void main() {
   } else {
     print("$angka bukan bilangan prima");
   }
+
+  print("\nDaftar bilangan prima dari 1 sampai $angka:");
+  tampilkanDeretPrima(angka);
 }
 
 bool isPrima(int n) {
@@ -19,4 +22,12 @@ bool isPrima(int n) {
   }
 
   return true;
+}
+
+void tampilkanDeretPrima(int batas) {
+  for (int i = 2; i <= batas; i++) {
+    if (isPrima(i)) {
+      print(i);
+    }
+  }
 }
